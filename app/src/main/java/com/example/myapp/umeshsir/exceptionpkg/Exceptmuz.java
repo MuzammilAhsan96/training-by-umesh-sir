@@ -6,7 +6,14 @@ public class Exceptmuz {
         try {
             int t=10/i;
             System.out.println(t);
-        } catch (Exception e){
+        } catch (NullPointerException e){
+            System.out.println(e.getMessage());
+        }
+
+        catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+        catch (Throwable e){
             System.out.println(e.getMessage());
         }
         System.out.println(("hi"));
